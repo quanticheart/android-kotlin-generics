@@ -113,4 +113,7 @@ class Reified : AppCompatActivity() {
     inline fun <reified T> Iterable<*>.filterIsInstance2() = filter { it is T }
 
     inline fun <reified T> getClassJava(): Class<T> = T::class.java
+    fun <T> test(): T {
+        return T
+    }
 }
